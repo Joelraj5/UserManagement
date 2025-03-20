@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="user_management.css">
+</head>
+<body>
+    <h2>User Management System</h2>
+    <form id="userForm">
+        <input type="hidden" id="userId">
+        <input type="text" id="userName" placeholder="Enter Name" required>
+        <input type="email" id="userEmail" placeholder="Enter Email" required>
+        <button type="submit">Submit</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody"></tbody>
+    </table>
+    <script src="user_management.js"></script>
+</body>
+</html>
